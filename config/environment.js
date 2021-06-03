@@ -55,6 +55,8 @@ watchedNamespaces = watchedNamespaces
   // Remove empty values (in case there is a tailing comma).
   .filter(namespace => namespace)
 
+const pollInternalSecrets = 'POLL_INTERNAL_SECRETS' in process.env
+
 module.exports = {
   instanceId,
   vaultEndpoint,
@@ -72,6 +74,7 @@ module.exports = {
   logLevel,
   useHumanReadableLogLevels,
   logMessageKey,
+  pollInternalSecrets,
   watchTimeout,
   watchedNamespaces
 }

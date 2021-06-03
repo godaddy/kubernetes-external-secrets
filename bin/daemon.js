@@ -25,6 +25,7 @@ const {
   rolePermittedAnnotation,
   namingPermittedAnnotation,
   enforceNamespaceAnnotation,
+  pollInternalSecrets,
   watchTimeout,
   watchedNamespaces,
   instanceId
@@ -68,6 +69,7 @@ async function main () {
     enforceNamespaceAnnotation,
     customResourceManifest,
     pollingDisabled,
+    pollInternalSecrets,
     logger
   })
 
